@@ -1,0 +1,11 @@
+language: python
+pithon:
+  - "3.7"
+
+services:
+  - docker
+
+before_scrypt: pip install docker-compose
+
+scrypt:
+  - docker-compose run app sh -c "python manage.py test && flake8"

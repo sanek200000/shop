@@ -1,5 +1,5 @@
 FROM python:3.7-slim
-MAINTAINER Sanek
+LABEL Author='Sanek'
 
 ENV PYTHONUNBUFERED 1
 
